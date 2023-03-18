@@ -7,10 +7,8 @@ FROM python:3.10.10-windowsservercore-ltsc2022
 
 WORKDIR /app
 
-COPY requirements.txt ./
-# RUN pip3 install --upgrade pip
-# RUN python3 -m pip install --upgrade pip
-RUN pip3 install --no-cache-dir -r requirements.txt --user 
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 
 COPY . .
 
