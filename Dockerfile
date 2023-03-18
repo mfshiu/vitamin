@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1
 
-FROM python:3.10-alpine
+# FROM python:3.10-alpine
+FROM amd64/python:3.10.10-alpine3.17
 
 WORKDIR /app
 
