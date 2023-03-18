@@ -15,5 +15,6 @@ def hello():
     return "Hello world! :)"
 
 if __name__ == '__main__':
-    # import render
-    app.run(host=config.app_ip, port=config.app_port)
+    app.run(debug=True)
+    # app.run(host=config.app_ip, port=config.app_port)
+    
