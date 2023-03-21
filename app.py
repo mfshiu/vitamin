@@ -16,4 +16,6 @@ def hello():
 
 if __name__ == '__main__':
     # import render
-    app.run(host=config.app_ip, port=config.app_port)
+    app.run(debug=True, host='0.0.0.0')
+    #app.run(host=config.app_ip, port=config.app_port)
+    
