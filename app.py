@@ -5,6 +5,9 @@ import config
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
+@app.context_processor
+def inject_stage_and_region():
+    return dict(title="TPRAI Vitamin")
 
 @app.route('/')
 def home():
@@ -15,7 +18,6 @@ def hello():
     return "Hello world! :)"
 
 if __name__ == '__main__':
-    # import render
     app.run(debug=True, host='0.0.0.0')
     #app.run(host=config.app_ip, port=config.app_port)
     
