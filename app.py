@@ -13,6 +13,10 @@ def inject_stage_and_region():
 def home():
     return render_template('/index.html')
 
+@app.route('/app-user-list.html')
+def userList():
+    return render_template('/app-user-list.html')
+
 @app.route('/hello')
 def hello():
     return "Hello world! :)"
