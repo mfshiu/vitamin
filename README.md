@@ -41,7 +41,7 @@
                   src="../static/assets/img/branding/logo.png" 
                   with="40" 
                   heigh="42" 
-                  alt="tprai">
+                  alt="tprai chat">
                 <image>
 #### change grand name:
         find: <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span>

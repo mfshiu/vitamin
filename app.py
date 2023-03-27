@@ -17,10 +17,6 @@ def home():
 def userList():
     return render_template('/app-user-list.html')
 
-@app.route('/hello')
-def hello():
-    return "Hello world! :)"
-
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
     #app.run(host=config.app_ip, port=config.app_port)
